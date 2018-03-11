@@ -10,7 +10,11 @@ const VideoList = (props) => {
     // we pass key prop to list so that react can quickly grab individual items to update
     // instead of updating the entire list
     return (
-      <VideoListItem video={video} key={video.etag} />
+      <VideoListItem
+        onVideoSelect={props.onVideoSelect}
+        video={video}
+        key={video.etag}
+      />
     )
   })
 
