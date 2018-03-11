@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
     )
   }
 
-  onInputChange(event) {
+  onInputChange = (event) => {
     // when print event object, most values are null because of "event pooling"
     // something to do with asynchronous nature and performance optimization that I don't understand
     // event.target.value is the text inside input
