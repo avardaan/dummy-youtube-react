@@ -36,6 +36,7 @@ class App extends React.Component {
   videoSearch = (term) => {
     // youtube search api call with user's typed search term
     YTSearch({ key: API_KEY, term: term }, (data) => {
+      console.log(data)
       this.setState({
         videos: data,
         selectedVideo: data[0]
